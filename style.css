@@ -13,6 +13,7 @@ body {
 
 .nav-head {
     display: flex;
+    max-width: 100%;
     justify-content: space-around;
     height: 95px;
     background-color: #562EFF;
@@ -35,20 +36,27 @@ body {
     color: #FFF;
 }
 
-.link a {
+.links a {
     text-decoration: none;
-    margin-right: 36px;
+    padding: 15px;
     color: #FFF;
 }
 
-.link {
+.links {
     display: flex;
     align-items: center;
+    max-width: 100%;
 }
 
-.link img {
+.links img {
+    margin-left: 20px;
     width: 51px;
     height: 51px;
+}
+
+.links a:hover {
+    background-color: goldenrod;
+    border-radius: 10px;
 }
 
 
@@ -62,7 +70,7 @@ main {
 
 .container {
     background-color: #FFF;
-    width: 870px;
+    max-width: 870px;
     padding: 30px;
     margin-top: 21px;
     border: 5px;
@@ -207,11 +215,17 @@ hr {
     }
     .container {
         width: 100%;
+        padding: 0;
+        border: none;
     }
     .players,
     .blogs,
     .courses {
         grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .course {
+        align-items: center;
     }
     .player,
     .blogs,
@@ -225,10 +239,12 @@ hr {
 
 @media only screen and (min-width:689px) and (max-width:992px) {
     .nav-head {
-        width: 100%;
+        max-width: 100%;
     }
     .container {
         width: 100%;
+        border: none;
+        padding: 0;
     }
     .players,
     .blogs,
