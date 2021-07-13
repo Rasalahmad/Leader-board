@@ -167,9 +167,8 @@ hr {
 }
 
 .course .banner img {
-    width: 230px;
-    height: 104px;
-    margin-left: 10px;
+    width: 100%;
+    height: 150px;
 }
 
 .course-instructor {
@@ -224,7 +223,8 @@ hr {
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
     }
-    .course {
+    .course,
+    .players {
         align-items: center;
     }
     .player,
